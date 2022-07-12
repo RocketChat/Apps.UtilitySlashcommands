@@ -1,0 +1,16 @@
+{
+    "id": "e778b0c4-b2e1-4d76-b19d-819669f7798f",
+    "version": "0.0.1",
+    "requiredApiVersion": "^1.19.0",
+    "iconFile": "icon.png",
+    "author": {
+        "name": "Himanshu Malviya",
+        "homepage": "https://localhost:3000",
+        "support": "support@rocket.chat"
+    },
+    "name": "HelloWorld",
+    "nameSlug": "helloworld",
+    "classFile": "HelloWorldApp.ts",
+    "description": "Says helloworld",
+    "implements": []
+}
