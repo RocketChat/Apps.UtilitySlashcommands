@@ -1,0 +1,16 @@
+{
+    "id": "86bf843e-d812-47f2-9c02-0d0e2642cc4a",
+    "version": "0.0.1",
+    "requiredApiVersion": "^1.19.0",
+    "iconFile": "icon.png",
+    "author": {
+        "name": "Himanshu Malviya",
+        "homepage": "n/a",
+        "support": "n/a"
+    },
+    "name": "archiveroom",
+    "nameSlug": "archiveroom",
+    "classFile": "ArchiveroomApp.ts",
+    "description": "archiveroom",
+    "implements": []
+}
