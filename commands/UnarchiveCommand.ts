@@ -10,10 +10,10 @@ import {
 } from "@rocket.chat/apps-engine/definition/slashcommands";
 import { unarchiveRoom } from "../lib/archive";
 
-class ArchiveCommand implements ISlashCommand {
-    public command: string = "archive";
-    public i18nParamsExample: string = "archive_params";
-    public i18nDescription: string = "archive_description";
+export class UnarchiveCommand implements ISlashCommand {
+    public command: string = "unarchive";
+    public i18nParamsExample: string = "unarchive_params";
+    public i18nDescription: string = "unarchive_description";
     public permission?: string | undefined;
     public providesPreview: boolean = false;
 

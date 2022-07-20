@@ -10,7 +10,7 @@ import {
 } from "@rocket.chat/apps-engine/definition/slashcommands";
 import { archiveRoom } from "../lib/archive";
 
-class ArchiveCommand implements ISlashCommand {
+export class ArchiveCommand implements ISlashCommand {
     public command: string = "archive";
     public i18nParamsExample: string = "archive_params";
     public i18nDescription: string = "archive_description";
