@@ -3,17 +3,16 @@ import {
     IModify,
     IPersistence,
     IRead,
-} from "@rocket.chat/apps-engine/definition/accessors";
+} from '@rocket.chat/apps-engine/definition/accessors';
 import {
     ISlashCommand,
     SlashCommandContext,
-} from "@rocket.chat/apps-engine/definition/slashcommands";
-import { unarchiveRoom } from "../lib/archive";
+} from '@rocket.chat/apps-engine/definition/slashcommands';
 
 export class UnarchiveCommand implements ISlashCommand {
-    public command: string = "unarchive";
-    public i18nParamsExample: string = "unarchive_params";
-    public i18nDescription: string = "unarchive_description";
+    public command: string = 'unarchive';
+    public i18nParamsExample: string = 'unarchive_params';
+    public i18nDescription: string = 'unarchive_description';
     public permission?: string | undefined;
     public providesPreview: boolean = false;
 
@@ -22,8 +21,8 @@ export class UnarchiveCommand implements ISlashCommand {
         read: IRead,
         modify: IModify,
         http: IHttp,
-        persis: IPersistence
+        persis: IPersistence,
     ): Promise<void> {
-        return unarchiveRoom(context, read, modify);
+        // TODO
     }
 }
