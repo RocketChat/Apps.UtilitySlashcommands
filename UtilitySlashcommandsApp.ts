@@ -3,6 +3,8 @@ import { App } from '@rocket.chat/apps-engine/definition/App';
 import type { IAppInfo } from '@rocket.chat/apps-engine/definition/metadata';
 import type { IUser } from '../Rocket.Chat.Apps-engine/definition/users';
 
+import commands from './Commands';
+
 export class UtilitySlashcommandsApp extends App {
   public me!: IUser;
 
@@ -17,6 +19,7 @@ export class UtilitySlashcommandsApp extends App {
     return Boolean(this.me);
   }
 
-  // tslint:disable-next-line:no-empty
-  protected async extendConfiguration(configuration: IConfigurationExtend, environmentRead: IEnvironmentRead): Promise<void> {}
+  protected async extendConfiguration(configuration: IConfigurationExtend, environmentRead: IEnvironmentRead): Promise<void> {
+    await Promise.all(commands.map((CommandClass) => new CommandClass(this)));
+  }
 }
