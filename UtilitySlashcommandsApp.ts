@@ -2,7 +2,6 @@ import type { IAppAccessors, IConfigurationExtend, IConfigurationModify, IEnviro
 import { App } from '@rocket.chat/apps-engine/definition/App';
 import type { IAppInfo } from '@rocket.chat/apps-engine/definition/metadata';
 import type { IUser } from '../Rocket.Chat.Apps-engine/definition/users';
-import commands from './Commands';
 
 import commands from './Commands';
 
