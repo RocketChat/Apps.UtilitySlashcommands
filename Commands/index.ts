@@ -1,7 +1,17 @@
 import { MeCommand } from './MeCommand';
-import { Status } from './status';
+import { Away, Busy, Invisible, Offline, Online, Status } from './Status/index';
 import asciiarts_commands from './AsciiArts';
 
-const commands = [...asciiarts_commands, MeCommand, Status] as const;
+const commands = [
+  // Status
+  Away,
+  Online,
+  Offline,
+  Invisible,
+  Busy,
+  Status,
+  // Me
+  MeCommand,
+];
 
 export default commands;
