@@ -1,7 +1,7 @@
 import { IHttp, IModify, IPersistence, IRead } from '@rocket.chat/apps-engine/definition/accessors';
 import { ISlashCommand, SlashCommandContext } from '@rocket.chat/apps-engine/definition/slashcommands';
-import { sendMessageToRoom } from '../../Lib/communication';
 import type { UtilitySlashcommandsApp } from '../../UtilitySlashcommandsApp';
+import { sendMessageToRoom } from './../../lib/communication';
 import { AsciiArtCommand } from './enum';
 
 export class GimmeCommand implements ISlashCommand {

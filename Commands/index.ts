@@ -1,6 +1,6 @@
 import { MeCommand } from './MeCommand';
 import { Away, Busy, Invisible, Offline, Online, Status } from './Status/index';
-import asciiarts_commands from './AsciiArts';
+import { GimmeCommand, LennyfaceCommand, TableflipCommand, UnflipCommand, ShrugCommand } from './AsciiArts/index';
 
 const commands = [
   // Status
@@ -10,6 +10,12 @@ const commands = [
   Invisible,
   Busy,
   Status,
+  // AsciiArts
+  GimmeCommand,
+  LennyfaceCommand,
+  TableflipCommand,
+  UnflipCommand,
+  ShrugCommand,
   // Me
   MeCommand,
 ];
