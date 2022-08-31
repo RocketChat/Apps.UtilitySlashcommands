@@ -1,5 +1,5 @@
-import { IMessage } from '@rocket.chat/apps-engine/definition/messages';
-import { IAccessors, IMessageWrapper } from './types';
+import type { IMessage } from '@rocket.chat/apps-engine/definition/messages';
+import type { IAccessors, IMessageWrapper } from './types';
 
 export async function notifyUser(params: IMessageWrapper & Pick<IAccessors, 'modify'>): Promise<void> {
   const { modify, room, sender, receiver, text } = params;
