@@ -1,7 +1,7 @@
 {
     "id": "045352d4-6711-449d-8994-6beb1e89ab04",
     "version": "0.0.1",
-    "requiredApiVersion": "^1.4.0",
+    "requiredApiVersion": "^1.33.0",
     "iconFile": "icon.png",
     "author": {
         "name": "Rocket.Chat",
@@ -11,5 +11,6 @@
     "name": "Utility Slashcommands",
     "nameSlug": "utility-slashcommands",
     "classFile": "UtilitySlashcommandsApp.ts",
-    "description": "Core Rocket.Chat slashcommands"
+    "description": "Core Rocket.Chat slashcommands",
+    "implements": []
 }
