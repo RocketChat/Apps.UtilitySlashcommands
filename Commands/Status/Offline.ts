@@ -2,7 +2,7 @@ import type { IModify, IRead } from '@rocket.chat/apps-engine/definition/accesso
 import type { ISlashCommand, SlashCommandContext } from '@rocket.chat/apps-engine/definition/slashcommands';
 import { UserStatusConnection } from '@rocket.chat/apps-engine/definition/users';
 import type { UtilitySlashcommandsApp } from '../../UtilitySlashcommandsApp';
-import { changeStatus } from '../../lib/changeStatus';
+import { changeStatus } from '../../Lib/changeStatus';
 
 export class Offline implements ISlashCommand {
   public command: string = 'offline';

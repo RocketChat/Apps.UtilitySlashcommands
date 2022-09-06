@@ -1,6 +1,6 @@
 import { IHttp, IModify, IPersistence, IRead } from '@rocket.chat/apps-engine/definition/accessors';
 import { ISlashCommand, SlashCommandContext } from '@rocket.chat/apps-engine/definition/slashcommands';
-import { sendMessageToRoom } from '../../lib/communication';
+import { sendMessageToRoom } from '../../Lib/communication';
 import type { UtilitySlashcommandsApp } from '../../UtilitySlashcommandsApp';
 import { AsciiArtCommand } from './enum';
 

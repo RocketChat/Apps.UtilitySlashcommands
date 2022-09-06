@@ -3,7 +3,7 @@ import { ISlashCommand, SlashCommandContext } from '@rocket.chat/apps-engine/def
 import { IUser, UserStatusConnection } from '@rocket.chat/apps-engine/definition/users';
 import { IRoom } from '@rocket.chat/apps-engine/definition/rooms';
 import type { UtilitySlashcommandsApp } from '../../UtilitySlashcommandsApp';
-import { sendNotification } from '../../lib/message';
+import { sendNotification } from '../../Lib/message';
 
 export class Status implements ISlashCommand {
   public command: string = 'status';
